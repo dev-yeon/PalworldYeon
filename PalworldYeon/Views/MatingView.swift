@@ -17,7 +17,7 @@ struct MatingView: View {
             if !viewModel.pals.isEmpty {
                 // 예시: 첫 번째 'Pal'의 이름과 이미지를 표시
                 Text(viewModel.pals[0].name)
-                Image(systemName: "heart")
+                Image("palicon_\(viewModel.pals[0].palDeckNo)")
                     .resizable()
                     .scaledToFit()
                     .frame(width: 100, height: 100)
