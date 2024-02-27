@@ -1,7 +1,7 @@
 import Foundation
 
 // MARK: - Pal 구조체
-struct Pal: Codable {
+struct Pal: Identifiable,Codable  {
     var id: Int
     var image: String?
     var name: String
@@ -11,6 +11,7 @@ struct Pal: Codable {
     var workAptitudes: WorkAptitude
     var otherInfo: OtherInfo
     var skill: Skill
+   // var parents: [Int] = [] // 부모 Pal의 ID 목록 추가
     
     enum CodingKeys: String, CodingKey {
         case id, image, name, palDeckNo, element1, element2
@@ -21,6 +22,8 @@ struct Pal: Codable {
         case foodIntake, riding, equipmentNeeded
         // skill
         case skillName, description
+        
+        case parents
     }
     init(from decoder: Decoder) throws {
         let container = try decoder.container(keyedBy: CodingKeys.self)
@@ -61,6 +64,7 @@ struct Pal: Codable {
         let skillName = try container.decode(String.self, forKey: .skillName)
         let description = try container.decode(String.self, forKey: .description)
         skill = Skill(skillName: skillName, description: description)
+        
         
         workAptitudes = WorkAptitude(kindling: kindling, watering: watering, planting: planting, electricity: electricity, crafting: crafting, gathering: gathering, deforesting: deforesting, mining: mining, medicine_production: medicine_production, cooling: cooling, transporting: transporting, farming: farming, work01: 0, work02: 0, work03: 0)
     }
