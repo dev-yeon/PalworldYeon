@@ -1,14 +1,16 @@
 //
-//  MatingViewModel.swift
+//  searchViewModel.swift
 //  PalworldYeon
 //
-//  Created by yeon on 2/27/24.
+//  Created by yeon on 2/29/24.
 //
 
 import Foundation
 import Combine
 
-class MatingViewModel: ObservableObject {
+
+//도로롱
+class SearchViewModel: ObservableObject {
     @Published var searchText = ""
     @Published var results: [String] = [] // 예시 결과를 저장할 배열
     
