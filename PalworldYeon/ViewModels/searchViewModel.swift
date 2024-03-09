@@ -23,6 +23,7 @@ class SearchViewModel: ObservableObject {
             .debounce(for: 1.0, scheduler: RunLoop.main) // 사용자 입력 후 1초 대기
             .sink { [weak self] text in
                 self?.search(query: text) // 쿼리 실행
+                
             }
             .store(in: &cancellables)
     }

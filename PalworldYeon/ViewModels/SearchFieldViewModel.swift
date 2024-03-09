@@ -8,7 +8,8 @@
 import Foundation
 import Combine
 
-class MatingViewModel: ObservableObject {
+class
+SearchFieldViewModel: ObservableObject {
     @Published var searchText = ""
     @Published var results: [String] = [] // 예시 결과를 저장할 배열
     

@@ -8,11 +8,7 @@
 import Foundation
 import Combine
 //MARK: - JSON 파일에서 사용할 수 있는 모델 정의
-struct BreedingData: Codable {
-    let breedingPairs: [String: String]
 
-    // 커스텀 init을 사용하여 직접 디코딩하지 않아도 되므로, 생략 가능
-}
 
 
 //MARK: - JSON 파일 로드 및 파싱 함수
