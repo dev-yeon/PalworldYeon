@@ -59,6 +59,7 @@
 		26C1B39E2B7FBED300B4D1BC /* palData.json in Resources */ = {isa = PBXBuildFile; fileRef = 26C1B39D2B7FBED300B4D1BC /* palData.json */; };
 		26C1B3A62B7FD29300B4D1BC /* Pal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26C1B3A52B7FD29300B4D1BC /* Pal.swift */; };
 		26D998C22B86392C000FEAA1 /* palBreedingData.json in Resources */ = {isa = PBXBuildFile; fileRef = 26D998C12B86392C000FEAA1 /* palBreedingData.json */; };
+		26DD1EA52B9EEA5B00B9E26B /* ParentsSheetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26DD1EA42B9EEA5B00B9E26B /* ParentsSheetView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -90,6 +91,7 @@
 		26C1B3A52B7FD29300B4D1BC /* Pal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pal.swift; sourceTree = "<group>"; };
 		26D998C12B86392C000FEAA1 /* palBreedingData.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = palBreedingData.json; sourceTree = "<group>"; };
 		26D998C32B86397D000FEAA1 /* palData.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = palData.json; sourceTree = "<group>"; };
+		26DD1EA42B9EEA5B00B9E26B /* ParentsSheetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParentsSheetView.swift; sourceTree = "<group>"; };
 		26FAC6EE2B68CAE800E560F5 /* PalworldYeon.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = PalworldYeon.entitlements; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -187,6 +189,7 @@
 				26C1B3992B7FA04300B4D1BC /* PalDetailView.swift */,
 				2675E5D92B88D9A700635C43 /* ChildPickerView.swift */,
 				262A17E22B90CE6400806215 /* BreedingListView.swift */,
+				26DD1EA42B9EEA5B00B9E26B /* ParentsSheetView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -354,6 +357,7 @@
 				2653B55F2B69FD8F00C626A5 /* MatingView.swift in Sources */,
 				26C1B3982B7F9E1200B4D1BC /* PalViewModel.swift in Sources */,
 				26C1B3A62B7FD29300B4D1BC /* Pal.swift in Sources */,
+				26DD1EA52B9EEA5B00B9E26B /* ParentsSheetView.swift in Sources */,
 				262A17E52B90CEF100806215 /* BreedingPair.swift in Sources */,
 				262A17E32B90CE6400806215 /* BreedingListView.swift in Sources */,
 				262A17DF2B90CDCE00806215 /* searchViewModel.swift in Sources */,

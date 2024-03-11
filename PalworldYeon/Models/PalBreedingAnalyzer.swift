@@ -37,8 +37,7 @@ func parsePalBreedingData(from jsonData: Data) -> [Int: [Int]] {
         if let jsonDict = try JSONSerialization.jsonObject(with: jsonData, options: []) as? [String: Any] {
             for (key, value) in jsonDict where key != "Search:" {
                 if let childId = Int(key), let parentName = value as? String {
-                    // 예시에서는 부모의 이름만 주어지므로, 여기서는 단순히 이름을 기준으로 ID를 매핑합니다.
-                    // 실제로는 부모의 ID를 정확히 알아내는 추가 로직이 필요할 수 있습니다.
+                 
                     let parentId = findPalIdByName(parentName, in: jsonDict)
                     if childToParentsMap[childId] == nil {
                         childToParentsMap[childId] = [parentId]

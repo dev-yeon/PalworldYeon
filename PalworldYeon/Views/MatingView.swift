@@ -8,6 +8,7 @@ struct MatingView: View {
     @State private var selectedChildPalId: Int?
     @State private var selectedChildPalName: String? // 선택된 자식 'Pal'의 ID를 저장하는 상태
     @State private var searchText = "" // 검색어를 저장하는 상태
+    @State private var showParentSheet = false
     //도로롱
     // 검색어에 따라 필터링된 'Pals' 목록을 반환하는 계산 속성
     var filteredPals: [Pal] {
@@ -19,7 +20,7 @@ struct MatingView: View {
     }
     
     var body: some View {
-        //MARK: -검색창
+        //MARK: - 검색창
         VStack {
             TextField("찾고 싶은 자식 펠의 이름 입력 ex)도로롱 '도'", text: $searchText)
                 .padding()
@@ -27,6 +28,7 @@ struct MatingView: View {
                 .cornerRadius(10)
                 .padding(.horizontal)
             
+            //MARK: - 팔들의 목록 (버튼화)
             List(filteredPals) { pal in
                 Button(action: {
                     // 선택된 Pal의 이름을 저장
@@ -35,6 +37,8 @@ struct MatingView: View {
                     if let selectedPal = viewModel.pals.first(where: { $0.name == self.selectedChildPalName }) {
                         self.selectedChildPalId = selectedPal.id
                     }
+                    // Sheet를 표시하기 위해 showParentSheet를 true로 설정
+                        self.showParentSheet = true
                 }) {
                     HStack {
                         Text("No. \(pal.palDeckNo)")
@@ -50,20 +54,28 @@ struct MatingView: View {
                 .buttonStyle(PlainButtonStyle())
             }
             
-            
-            // 선택된 자식 이름이 있고, 그에 따른 부모 쌍의 검색 결과를 표시합니다.
-            if let selectedChildName = selectedChildPalName {
-                Text("Selected Child: \(selectedChildName)")
-                    .padding()
-                
-                // 검색 결과 표시
-                ForEach(breedingViewModel.results, id: \.self) { result in
-                    Text(result)
+            Button("Find Parents") {
+                if let selectedChildName = selectedChildPalName {
+                    breedingViewModel.findParentPairs(forChildName: selectedChildName)
+                    print("Setting showParentSheet to true.")
+                    self.showParentSheet = true
                 }
             }
+//            // 선택된 자식 이름이 있고, 그에 따른 부모 쌍의 검색 결과를 표시합니다.
+//            if let selectedChildName = selectedChildPalName {
+//             
+//                breedingViewModel.findParentPairs(forChildName: selectedChildName)
+//                print("Setting showParentSheet to true.")
+//                self.showParentSheet = true
+//                
+////                // 검색 결과 표시
+////                ForEach(breedingViewModel.parentPals, id: \.self) { result in
+////                    Text(result)
+////                }
+//                
+//            }
         }
-        
-        
+
         .onAppear {
             viewModel.loadPalsData()
             breedingViewModel.loadBreedingData() // 교배 데이터도 로드합니다.
@@ -72,7 +84,11 @@ struct MatingView: View {
         .onChange(of: selectedChildPalName) { newValue in
             if let newChildName = newValue {
                 breedingViewModel.findParentPairs(forChildName: newChildName)
+                self.showParentSheet = true
             }
+        }
+        .sheet(isPresented: $showParentSheet) {
+            ParentsSheetView(parents: breedingViewModel.parentPals)
         }
     }
 }
