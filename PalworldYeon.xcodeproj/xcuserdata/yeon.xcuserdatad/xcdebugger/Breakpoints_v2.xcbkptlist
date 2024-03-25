@@ -3,4 +3,52 @@
    uuid = "A7A49DEC-0DC3-4FDE-B38E-4E02DDFC4583"
    type = "1"
    version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "45BB0279-4FF3-42C9-82F2-0C9A26368807"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "PalworldYeon/ViewModels/SearchFieldViewModel.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "12"
+            endingLineNumber = "12"
+            landmarkName = "SearchFieldViewModel"
+            landmarkType = "3">
+            <Locations>
+               <Location
+                  uuid = "45BB0279-4FF3-42C9-82F2-0C9A26368807 - f7c38b7d97882bbf"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "PalworldYeon.SearchFieldViewModel.deinit"
+                  moduleName = "PalworldYeon"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/yeon/Documents/iOS/PalworldYeon/PalworldYeon/ViewModels/SearchFieldViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0">
+               </Location>
+               <Location
+                  uuid = "45BB0279-4FF3-42C9-82F2-0C9A26368807 - 5e178f4fc9b595a2"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "PalworldYeon.SearchFieldViewModel.__deallocating_deinit"
+                  moduleName = "PalworldYeon"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/yeon/Documents/iOS/PalworldYeon/PalworldYeon/ViewModels/SearchFieldViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
 </Bucket>

@@ -13,7 +13,9 @@ class PalViewModel: ObservableObject {
 //    @Published var breedingPairs: [BreedingData.BreedingPair] = []
     
     init() {
+        
         loadPalsData()
+        
 
 //MARK: - 팔 데이터 파싱
     }

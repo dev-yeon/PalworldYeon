@@ -10,9 +10,13 @@ import SwiftUI
 struct ParentsSheetView: View {
 
     var parents: [Pal]
+    var searchViewModel: SearchFieldViewModel
 
     var body: some View {
         NavigationView {
+            HStack{
+                Text("\(searchViewModel.results) Parents")
+            }
             List(parents, id: \.id) { parent in
                 HStack {
                     if let imageName = parent.image, !imageName.isEmpty {
@@ -34,7 +38,8 @@ struct ParentsSheetView: View {
                                     print("Displaying parent: \(parent.name)")
                                 }
             }
-            .navigationBarTitle("\(parents.count) Parents", displayMode: .inline)
+            .navigationBarTitle("\(searchViewModel.results) Parents", displayMode: .inline)
+            
         }
     }
 }

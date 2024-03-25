@@ -150,3 +150,17 @@ struct Skill: Codable {
     var skillName: String
     var description: String
 }
+
+extension Pal {
+    init(id: Int, image: String?, name: String, palDeckNo: String, element1: Element, element2: Element?, workAptitudes: WorkAptitude, otherInfo: OtherInfo, skill: Skill) {
+        self.id = id
+        self.image = image
+        self.name = name
+        self.palDeckNo = palDeckNo
+        self.element1 = element1
+        self.element2 = element2
+        self.workAptitudes = workAptitudes
+        self.otherInfo = otherInfo
+        self.skill = skill
+    }
+}
