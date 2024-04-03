@@ -10,28 +10,18 @@ import Foundation
 class PalViewModel: ObservableObject {
     @Published var pals: [Pal] = []
     @Published var searchNumber: Int?
+    private var palManager = PalManager()
 //    @Published var breedingPairs: [BreedingData.BreedingPair] = []
     
-    init() {
-        
-        loadPalsData()
-        
+//    init() {
+//        
+//        palManager.loadPalsData()
+//        print("PalViewModel - init")
+//        
+//    }
 
-//MARK: - 팔 데이터 파싱
-    }
-    func loadPalsData() {
-        guard let url = Bundle.main.url(forResource: "palData", withExtension: "json") else {
-            print("Failed to locate palData.json in bundle.")
-            return
-        }
-        
-        do {
-            let data = try Data(contentsOf: url)
-            self.pals = try JSONDecoder().decode([Pal].self, from: data)
-        } catch {
-            print("Failed to load palData.json from bundle: \(error)")
-        }
-    }
+
+    
 
     
 //MARK: - 주어진 ID로 Pal 이름을 찾는 함수
@@ -52,8 +42,6 @@ class PalViewModel: ObservableObject {
 
     func filterBreedingPairs(with text: String) {
         print("Filtering with text: \(text) <-주어진 ID로 Pal 이름")
-        
-        // 필터링 로직
     }
 
 }

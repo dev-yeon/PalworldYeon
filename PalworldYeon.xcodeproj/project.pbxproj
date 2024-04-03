@@ -7,25 +7,24 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2611EE932BBD8DC4003708D4 /* PalRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2611EE922BBD8DC4003708D4 /* PalRowView.swift */; };
+		2611EE952BBDC22A003708D4 /* ParentRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2611EE942BBDC22A003708D4 /* ParentRowView.swift */; };
 		262A17DF2B90CDCE00806215 /* searchViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 262A17DE2B90CDCE00806215 /* searchViewModel.swift */; };
 		262A17E12B90CE4400806215 /* BreedingViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 262A17E02B90CE4400806215 /* BreedingViewModel.swift */; };
 		262A17E32B90CE6400806215 /* BreedingListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 262A17E22B90CE6400806215 /* BreedingListView.swift */; };
-		262A17E52B90CEF100806215 /* BreedingPair.swift in Sources */ = {isa = PBXBuildFile; fileRef = 262A17E42B90CEF100806215 /* BreedingPair.swift */; };
 		262A17E72B90D91900806215 /* BreedingData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 262A17E62B90D91900806215 /* BreedingData.swift */; };
 		26438C1D2B674697004A08EA /* PalworldYeonApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26438C1C2B674697004A08EA /* PalworldYeonApp.swift */; };
 		26438C212B674698004A08EA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 26438C202B674698004A08EA /* Assets.xcassets */; };
 		26438C242B674698004A08EA /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 26438C232B674698004A08EA /* Preview Assets.xcassets */; };
-		26438C2B2B677871004A08EA /* CircleImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26438C2A2B677871004A08EA /* CircleImage.swift */; };
 		26438C2D2B6778ED004A08EA /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26438C2C2B6778ED004A08EA /* MapView.swift */; };
-		2653B55D2B69FD7500C626A5 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2653B55C2B69FD7500C626A5 /* ContentView.swift */; };
 		2653B55F2B69FD8F00C626A5 /* MatingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2653B55E2B69FD8F00C626A5 /* MatingView.swift */; };
 		2653B5612B69FDBB00C626A5 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2653B5602B69FDBB00C626A5 /* HomeView.swift */; };
 		2653B5632B69FF1A00C626A5 /* SettingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2653B5622B69FF1A00C626A5 /* SettingView.swift */; };
 		266382162B9AE2C600E5DF57 /* new_palBreedingData.json in Resources */ = {isa = PBXBuildFile; fileRef = 266382152B9AE2C600E5DF57 /* new_palBreedingData.json */; };
 		2675E5DA2B88D9A700635C43 /* ChildPickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2675E5D92B88D9A700635C43 /* ChildPickerView.swift */; };
-		2675E5DC2B8CE20F00635C43 /* PalBreedingAnalyzer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2675E5DB2B8CE20F00635C43 /* PalBreedingAnalyzer.swift */; };
-		2675E5E02B8D070F00635C43 /* PalBreedingMapping.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2675E5DF2B8D070F00635C43 /* PalBreedingMapping.swift */; };
 		2675E5E22B8D07B200635C43 /* SearchFieldViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2675E5E12B8D07B200635C43 /* SearchFieldViewModel.swift */; };
+		26AA30C02BB5729E00351549 /* PalManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26AA30BF2BB5729E00351549 /* PalManager.swift */; };
+		26AA30C22BB5CC5000351549 /* EmptyMatingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26AA30C12BB5CC5000351549 /* EmptyMatingView.swift */; };
 		26C16A9F2B6D1B3E00597B8F /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 26C16A9E2B6D1B3E00597B8F /* GoogleService-Info.plist */; };
 		26C16AA22B6D1C7F00597B8F /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = 26C16AA12B6D1C7F00597B8F /* FirebaseAnalytics */; };
 		26C16AA42B6D1C7F00597B8F /* FirebaseAnalyticsOnDeviceConversion in Frameworks */ = {isa = PBXBuildFile; productRef = 26C16AA32B6D1C7F00597B8F /* FirebaseAnalyticsOnDeviceConversion */; };
@@ -58,38 +57,35 @@
 		26C1B39A2B7FA04300B4D1BC /* PalDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26C1B3992B7FA04300B4D1BC /* PalDetailView.swift */; };
 		26C1B39E2B7FBED300B4D1BC /* palData.json in Resources */ = {isa = PBXBuildFile; fileRef = 26C1B39D2B7FBED300B4D1BC /* palData.json */; };
 		26C1B3A62B7FD29300B4D1BC /* Pal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26C1B3A52B7FD29300B4D1BC /* Pal.swift */; };
-		26D998C22B86392C000FEAA1 /* palBreedingData.json in Resources */ = {isa = PBXBuildFile; fileRef = 26D998C12B86392C000FEAA1 /* palBreedingData.json */; };
 		26DD1EA52B9EEA5B00B9E26B /* ParentsSheetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26DD1EA42B9EEA5B00B9E26B /* ParentsSheetView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		260AB8802B68D6A200E94820 /* PalworldYeonRelease.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; name = PalworldYeonRelease.entitlements; path = "../../../../Library/Mobile Documents/.Trash/PalworldYeonRelease.entitlements"; sourceTree = "<group>"; };
+		2611EE922BBD8DC4003708D4 /* PalRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PalRowView.swift; sourceTree = "<group>"; };
+		2611EE942BBDC22A003708D4 /* ParentRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParentRowView.swift; sourceTree = "<group>"; };
 		262A17DE2B90CDCE00806215 /* searchViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = searchViewModel.swift; sourceTree = "<group>"; };
 		262A17E02B90CE4400806215 /* BreedingViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BreedingViewModel.swift; sourceTree = "<group>"; };
 		262A17E22B90CE6400806215 /* BreedingListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BreedingListView.swift; sourceTree = "<group>"; };
-		262A17E42B90CEF100806215 /* BreedingPair.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BreedingPair.swift; sourceTree = "<group>"; };
 		262A17E62B90D91900806215 /* BreedingData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BreedingData.swift; sourceTree = "<group>"; };
 		26438C192B674697004A08EA /* PalworldYeon.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PalworldYeon.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		26438C1C2B674697004A08EA /* PalworldYeonApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PalworldYeonApp.swift; sourceTree = "<group>"; };
 		26438C202B674698004A08EA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		26438C232B674698004A08EA /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		26438C2A2B677871004A08EA /* CircleImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleImage.swift; sourceTree = "<group>"; };
 		26438C2C2B6778ED004A08EA /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
-		2653B55C2B69FD7500C626A5 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		2653B55E2B69FD8F00C626A5 /* MatingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatingView.swift; sourceTree = "<group>"; };
 		2653B5602B69FDBB00C626A5 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		2653B5622B69FF1A00C626A5 /* SettingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingView.swift; sourceTree = "<group>"; };
 		266382152B9AE2C600E5DF57 /* new_palBreedingData.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = new_palBreedingData.json; sourceTree = "<group>"; };
 		2675E5D92B88D9A700635C43 /* ChildPickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChildPickerView.swift; sourceTree = "<group>"; };
-		2675E5DB2B8CE20F00635C43 /* PalBreedingAnalyzer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PalBreedingAnalyzer.swift; sourceTree = "<group>"; };
-		2675E5DF2B8D070F00635C43 /* PalBreedingMapping.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PalBreedingMapping.swift; sourceTree = "<group>"; };
 		2675E5E12B8D07B200635C43 /* SearchFieldViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchFieldViewModel.swift; sourceTree = "<group>"; };
+		26AA30BF2BB5729E00351549 /* PalManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PalManager.swift; sourceTree = "<group>"; };
+		26AA30C12BB5CC5000351549 /* EmptyMatingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmptyMatingView.swift; sourceTree = "<group>"; };
 		26C16A9E2B6D1B3E00597B8F /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		26C1B3972B7F9E1100B4D1BC /* PalViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PalViewModel.swift; sourceTree = "<group>"; };
 		26C1B3992B7FA04300B4D1BC /* PalDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PalDetailView.swift; sourceTree = "<group>"; };
 		26C1B39D2B7FBED300B4D1BC /* palData.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = palData.json; path = PalworldYeon/ViewModels/palData.json; sourceTree = "<group>"; };
 		26C1B3A52B7FD29300B4D1BC /* Pal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pal.swift; sourceTree = "<group>"; };
-		26D998C12B86392C000FEAA1 /* palBreedingData.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = palBreedingData.json; sourceTree = "<group>"; };
 		26D998C32B86397D000FEAA1 /* palData.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = palData.json; sourceTree = "<group>"; };
 		26DD1EA42B9EEA5B00B9E26B /* ParentsSheetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParentsSheetView.swift; sourceTree = "<group>"; };
 		26FAC6EE2B68CAE800E560F5 /* PalworldYeon.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = PalworldYeon.entitlements; sourceTree = "<group>"; };
@@ -182,14 +178,15 @@
 			children = (
 				2653B5602B69FDBB00C626A5 /* HomeView.swift */,
 				26438C2C2B6778ED004A08EA /* MapView.swift */,
-				26438C2A2B677871004A08EA /* CircleImage.swift */,
-				2653B55C2B69FD7500C626A5 /* ContentView.swift */,
 				2653B55E2B69FD8F00C626A5 /* MatingView.swift */,
 				2653B5622B69FF1A00C626A5 /* SettingView.swift */,
 				26C1B3992B7FA04300B4D1BC /* PalDetailView.swift */,
 				2675E5D92B88D9A700635C43 /* ChildPickerView.swift */,
 				262A17E22B90CE6400806215 /* BreedingListView.swift */,
 				26DD1EA42B9EEA5B00B9E26B /* ParentsSheetView.swift */,
+				26AA30C12BB5CC5000351549 /* EmptyMatingView.swift */,
+				2611EE922BBD8DC4003708D4 /* PalRowView.swift */,
+				2611EE942BBDC22A003708D4 /* ParentRowView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -199,7 +196,6 @@
 			children = (
 				26D998C32B86397D000FEAA1 /* palData.json */,
 				266382152B9AE2C600E5DF57 /* new_palBreedingData.json */,
-				26D998C12B86392C000FEAA1 /* palBreedingData.json */,
 				26C1B3972B7F9E1100B4D1BC /* PalViewModel.swift */,
 				2675E5E12B8D07B200635C43 /* SearchFieldViewModel.swift */,
 				262A17DE2B90CDCE00806215 /* searchViewModel.swift */,
@@ -212,10 +208,8 @@
 			isa = PBXGroup;
 			children = (
 				26C1B3A52B7FD29300B4D1BC /* Pal.swift */,
-				2675E5DB2B8CE20F00635C43 /* PalBreedingAnalyzer.swift */,
-				2675E5DF2B8D070F00635C43 /* PalBreedingMapping.swift */,
-				262A17E42B90CEF100806215 /* BreedingPair.swift */,
 				262A17E62B90D91900806215 /* BreedingData.swift */,
+				26AA30BF2BB5729E00351549 /* PalManager.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -336,7 +330,6 @@
 				266382162B9AE2C600E5DF57 /* new_palBreedingData.json in Resources */,
 				26C16A9F2B6D1B3E00597B8F /* GoogleService-Info.plist in Resources */,
 				26C1B39E2B7FBED300B4D1BC /* palData.json in Resources */,
-				26D998C22B86392C000FEAA1 /* palBreedingData.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -352,21 +345,20 @@
 				26C1B39A2B7FA04300B4D1BC /* PalDetailView.swift in Sources */,
 				2675E5E22B8D07B200635C43 /* SearchFieldViewModel.swift in Sources */,
 				2675E5DA2B88D9A700635C43 /* ChildPickerView.swift in Sources */,
-				2675E5E02B8D070F00635C43 /* PalBreedingMapping.swift in Sources */,
 				26438C1D2B674697004A08EA /* PalworldYeonApp.swift in Sources */,
 				2653B55F2B69FD8F00C626A5 /* MatingView.swift in Sources */,
+				2611EE952BBDC22A003708D4 /* ParentRowView.swift in Sources */,
 				26C1B3982B7F9E1200B4D1BC /* PalViewModel.swift in Sources */,
 				26C1B3A62B7FD29300B4D1BC /* Pal.swift in Sources */,
 				26DD1EA52B9EEA5B00B9E26B /* ParentsSheetView.swift in Sources */,
-				262A17E52B90CEF100806215 /* BreedingPair.swift in Sources */,
 				262A17E32B90CE6400806215 /* BreedingListView.swift in Sources */,
+				2611EE932BBD8DC4003708D4 /* PalRowView.swift in Sources */,
 				262A17DF2B90CDCE00806215 /* searchViewModel.swift in Sources */,
 				2653B5632B69FF1A00C626A5 /* SettingView.swift in Sources */,
+				26AA30C02BB5729E00351549 /* PalManager.swift in Sources */,
 				2653B5612B69FDBB00C626A5 /* HomeView.swift in Sources */,
-				2653B55D2B69FD7500C626A5 /* ContentView.swift in Sources */,
-				2675E5DC2B8CE20F00635C43 /* PalBreedingAnalyzer.swift in Sources */,
+				26AA30C22BB5CC5000351549 /* EmptyMatingView.swift in Sources */,
 				262A17E12B90CE4400806215 /* BreedingViewModel.swift in Sources */,
-				26438C2B2B677871004A08EA /* CircleImage.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

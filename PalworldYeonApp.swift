@@ -9,10 +9,14 @@ import SwiftUI
 
 @main
 struct PalworldYeonApp: App {
+    var palManager = PalManager()
+
     var body: some Scene {
         WindowGroup {
             HomeView()
+                .environmentObject(palManager)
         }
+        //도로롱
     }
 }
  
