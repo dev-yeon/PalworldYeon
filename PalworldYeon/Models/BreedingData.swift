@@ -17,7 +17,16 @@ struct BreedingData: Codable, Hashable {
     }
 }
 // 부모 펠 쌍을 나타내는 새로운 구조체
-struct ParentPalPair {
+struct ParentPalPair: Hashable {
     let mother: Pal
     let father: Pal
+    
+    func hash(into hasher: inout Hasher) {
+           hasher.combine(mother)
+           hasher.combine(father)
+       }
+
+       static func ==(lhs: ParentPalPair, rhs: ParentPalPair) -> Bool {
+           return lhs.mother == rhs.mother && lhs.father == rhs.father
+       }
 }

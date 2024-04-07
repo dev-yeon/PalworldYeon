@@ -16,7 +16,7 @@ struct PalworldYeonApp: App {
             HomeView()
                 .environmentObject(palManager)
         }
-        //도로롱
+
     }
 }
  

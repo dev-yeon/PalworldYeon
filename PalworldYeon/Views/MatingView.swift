@@ -2,15 +2,14 @@ import SwiftUI
 import Combine
 
 struct MatingView: View {
-    // PalManager를 @StateObject로 선언하여 뷰와 연결
+
     @StateObject private var palManager = PalManager()
     @StateObject private var searchFieldViewModel = SearchFieldViewModel()
-//    @StateObject private var breedingViewModel = BreedingViewModel()
     @StateObject private var matingViewModel = PalViewModel()
 
     @State private var selectedChildPalId: Int?
-    @State private var selectedChildName: String? // 선택된 자식 'Pal'의 Name를 저장하는 상태
-    @State private var searchChildName = "" // 검색어를 저장하는 상태
+    @State private var selectedChildName: String?
+    @State private var searchChildName = ""
     @State private var showParentSheet = false
     @State private var loadBreedingData = false
 
@@ -19,10 +18,9 @@ struct MatingView: View {
         palManager.pals.filter {
             searchChildName.isEmpty || $0.name.lowercased().hasPrefix(searchChildName.lowercased())
         }
-
     }
-
     var body: some View {
+
         // MARK: - 검색창
         VStack {
             HStack{
@@ -41,7 +39,6 @@ struct MatingView: View {
                     }
                 }
             }
-            //도로롱
             .disabled(selectedChildName == nil)
 
             if filteredPals.isEmpty {
@@ -66,6 +63,33 @@ struct MatingView: View {
                     .buttonStyle(PlainButtonStyle())
                 }
             }
+            // 조건부로 ParentsSheetView 표시
+            if showParentSheet, let selectedChildName = selectedChildName {
+                VStack {
+                    HStack {
+                        Spacer()
+                        Button(action: {
+                            self.showParentSheet = false
+                        }) {
+                            Image(systemName: "xmark")
+                                .font(.headline) // 아이콘 크기 조정
+                                .padding(10) // 패딩을 줄여서 전체 크기 축소
+                                .foregroundColor(.white) // 아이콘 색상 변경 (선택적)
+                                .background(Color.black.opacity(0.6)) // 배경색 변경 및 투명도 조정
+                                .clipShape(Circle())
+                                .overlay(
+                                    Circle().stroke(Color.gray, lineWidth: 1) // 외곽선 추가 (선택적)
+                                )
+                        }
+                        .padding(.trailing, 20) // 버튼이 HStack 오른쪽 끝에서 너무 멀지 않도록 조정
+                        .padding(.top, 5) // 상단 여백 조정으로 위치 조정
+                    
+                    }
+                    .padding(.trailing)
+                    ParentsSheetView(selectedOneChildName: selectedChildName, parents: palManager.parentPals)
+                        .environmentObject(palManager)
+                }
+            }
         }
         .onAppear {
             print("Total Pals on Appear: \(palManager.pals.count)")
@@ -76,9 +100,6 @@ struct MatingView: View {
             }
         }
 
-//        .onChange(of: searchChildName) { _ in
-//            print("Filtered Pals on Search Change: \(self.filteredPals.map { $0.name })")
-//        }
         // selectedChildPalName 값이 변경될 때마다 부모 쌍을 검색합니다.
         .onChange(of: selectedChildName) { newValue in
             if let newChildName = newValue {
@@ -86,16 +107,11 @@ struct MatingView: View {
                 self.showParentSheet = true
             }
         }
-        .sheet(isPresented: $showParentSheet) {
-            // 'parents' 인자로 'breedingViewModel.parentPals'을 전달하고,
-            // 'selectedOneChildName' 인자로는 'selectedChildName'을 옵셔널 바인딩을 통해 안전하게 전달합니다.
-            // PalManager 인스턴스를 올바르게 전달합니다.
-            if let selectedChildName = selectedChildName {
-                ParentsSheetView(parents: palManager.parentPals, selectedOneChildName: selectedChildName)
-                    .environmentObject(palManager) // `palManager` 인스턴스를 전달합니다.
-            }
-        }
+//        .sheet(isPresented: $showParentSheet) {
+//            if let selectedChildName = selectedChildName {
+//                ParentsSheetView(selectedOneChildName: selectedChildName, parents: palManager.parentPals)
+//                    .environmentObject(palManager) // `palManager` 인스턴스를 전달합니다.
+//            }
+//        }
     }
 }
-//            ParentsSheetView(parents: palManager.parentPals, searchViewModel: searchFieldViewModel,selectedOneChildName: selectedChildName ?? "")
-//        .environmentObject(palManager)

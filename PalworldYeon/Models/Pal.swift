@@ -164,3 +164,12 @@ extension Pal {
         self.skill = skill
     }
 }
+extension Pal: Hashable {
+    static func == (lhs: Pal, rhs: Pal) -> Bool {
+        return lhs.id == rhs.id
+    }
+
+    func hash(into hasher: inout Hasher) {
+        hasher.combine(id)
+    }
+}

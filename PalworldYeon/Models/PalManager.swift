@@ -17,6 +17,7 @@ class PalManager: ObservableObject  {
     @Published var allBreedingData: [BreedingData] = []
 
     @Published var parentPals: [Pal] = [] // 부모 Pal 객체의 배열
+    @Published var parentPairs: [ParentPalPair] = []
 
     @Published var selectedChildName: String?
 
@@ -82,23 +83,27 @@ class PalManager: ObservableObject  {
     }
     //MARK: - Pal의 가능한 교배식을 Pal 자식의 childName으로 찾아내는 함수
     func findParentPairs(forChildName childName: String) {
-        var foundParentPairs: [Pal] = []
+
+        var foundPairs = Set<ParentPalPair>() // 중복을 방지하기 위해 Set 사용
         print("Searching parent pairs for child: \(childName)")
+
         for breedingData in allBreedingData {
 
             for pair in breedingData.breedings where pair.childName.lowercased() == childName.lowercased() {
-
                 if let motherPal = findPalByName(breedingData.motherName),
                    let fatherPal = findPalById(pair.fatherid) {
-                    foundParentPairs.append(contentsOf: [motherPal, fatherPal])
+                    // Add to the set, automatically avoiding duplicates
+                    let parentPair = ParentPalPair(mother: motherPal, father: fatherPal)
+                    foundPairs.insert(parentPair) // Set에 추가
+                    //foundParentPairs.append(contentsOf: [motherPal, fatherPal])
                     print("\(pair.childName)'s parent pair || mother:  \(motherPal.name), father : \(findFatherNameById(fatherPal.id))")
                 }
             }
         }
-        //도로롱
         DispatchQueue.main.async {
-            self.parentPals = foundParentPairs
-            print("Updated parentPals with \(foundParentPairs.count) parents.")
+            self.parentPairs = Array(foundPairs) // Convert back to an array if needed
+
+            print("Updated parentPals with \(foundPairs.count) parents.")
         }
     }
     //MARK: -  Pal을 id로 찾아내는 메소드

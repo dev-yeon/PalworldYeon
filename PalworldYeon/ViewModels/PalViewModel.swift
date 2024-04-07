@@ -11,17 +11,7 @@ class PalViewModel: ObservableObject {
     @Published var pals: [Pal] = []
     @Published var searchNumber: Int?
     private var palManager = PalManager()
-//    @Published var breedingPairs: [BreedingData.BreedingPair] = []
-    
-//    init() {
-//        
-//        palManager.loadPalsData()
-//        print("PalViewModel - init")
-//        
-//    }
 
-
-    
 
     
 //MARK: - 주어진 ID로 Pal 이름을 찾는 함수
@@ -45,7 +35,7 @@ class PalViewModel: ObservableObject {
     }
 
 }
-// 기존 변환 함수들은 유지
+//MARK: - 기존 변환 함수들은 유지
 extension PalViewModel {
     func convertStringIdToInt(_ id: String) -> Int? {
         return Int(id)
