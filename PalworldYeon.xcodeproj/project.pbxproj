@@ -8,9 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		2611EE932BBD8DC4003708D4 /* PalRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2611EE922BBD8DC4003708D4 /* PalRowView.swift */; };
-		2611EE952BBDC22A003708D4 /* ParentRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2611EE942BBDC22A003708D4 /* ParentRowView.swift */; };
 		262A17DF2B90CDCE00806215 /* searchViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 262A17DE2B90CDCE00806215 /* searchViewModel.swift */; };
-		262A17E12B90CE4400806215 /* BreedingViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 262A17E02B90CE4400806215 /* BreedingViewModel.swift */; };
 		262A17E72B90D91900806215 /* BreedingData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 262A17E62B90D91900806215 /* BreedingData.swift */; };
 		26438C1D2B674697004A08EA /* PalworldYeonApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26438C1C2B674697004A08EA /* PalworldYeonApp.swift */; };
 		26438C212B674698004A08EA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 26438C202B674698004A08EA /* Assets.xcassets */; };
@@ -24,6 +22,7 @@
 		2675E5E22B8D07B200635C43 /* SearchFieldViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2675E5E12B8D07B200635C43 /* SearchFieldViewModel.swift */; };
 		26AA30C02BB5729E00351549 /* PalManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26AA30BF2BB5729E00351549 /* PalManager.swift */; };
 		26AA30C22BB5CC5000351549 /* EmptyMatingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26AA30C12BB5CC5000351549 /* EmptyMatingView.swift */; };
+		26B65F042BC2D83000490DFC /* PalDexListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26B65F032BC2D83000490DFC /* PalDexListView.swift */; };
 		26C16A9F2B6D1B3E00597B8F /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 26C16A9E2B6D1B3E00597B8F /* GoogleService-Info.plist */; };
 		26C16AA22B6D1C7F00597B8F /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = 26C16AA12B6D1C7F00597B8F /* FirebaseAnalytics */; };
 		26C16AA42B6D1C7F00597B8F /* FirebaseAnalyticsOnDeviceConversion in Frameworks */ = {isa = PBXBuildFile; productRef = 26C16AA32B6D1C7F00597B8F /* FirebaseAnalyticsOnDeviceConversion */; };
@@ -62,9 +61,7 @@
 /* Begin PBXFileReference section */
 		260AB8802B68D6A200E94820 /* PalworldYeonRelease.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; name = PalworldYeonRelease.entitlements; path = "../../../../Library/Mobile Documents/.Trash/PalworldYeonRelease.entitlements"; sourceTree = "<group>"; };
 		2611EE922BBD8DC4003708D4 /* PalRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PalRowView.swift; sourceTree = "<group>"; };
-		2611EE942BBDC22A003708D4 /* ParentRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParentRowView.swift; sourceTree = "<group>"; };
 		262A17DE2B90CDCE00806215 /* searchViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = searchViewModel.swift; sourceTree = "<group>"; };
-		262A17E02B90CE4400806215 /* BreedingViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BreedingViewModel.swift; sourceTree = "<group>"; };
 		262A17E62B90D91900806215 /* BreedingData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BreedingData.swift; sourceTree = "<group>"; };
 		26438C192B674697004A08EA /* PalworldYeon.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PalworldYeon.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		26438C1C2B674697004A08EA /* PalworldYeonApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PalworldYeonApp.swift; sourceTree = "<group>"; };
@@ -79,6 +76,7 @@
 		2675E5E12B8D07B200635C43 /* SearchFieldViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchFieldViewModel.swift; sourceTree = "<group>"; };
 		26AA30BF2BB5729E00351549 /* PalManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PalManager.swift; sourceTree = "<group>"; };
 		26AA30C12BB5CC5000351549 /* EmptyMatingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmptyMatingView.swift; sourceTree = "<group>"; };
+		26B65F032BC2D83000490DFC /* PalDexListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PalDexListView.swift; sourceTree = "<group>"; };
 		26C16A9E2B6D1B3E00597B8F /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		26C1B3972B7F9E1100B4D1BC /* PalViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PalViewModel.swift; sourceTree = "<group>"; };
 		26C1B3992B7FA04300B4D1BC /* PalDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PalDetailView.swift; sourceTree = "<group>"; };
@@ -175,15 +173,12 @@
 			isa = PBXGroup;
 			children = (
 				2653B5602B69FDBB00C626A5 /* HomeView.swift */,
-				26438C2C2B6778ED004A08EA /* MapView.swift */,
-				2653B55E2B69FD8F00C626A5 /* MatingView.swift */,
-				2653B5622B69FF1A00C626A5 /* SettingView.swift */,
-				26C1B3992B7FA04300B4D1BC /* PalDetailView.swift */,
-				2675E5D92B88D9A700635C43 /* ChildPickerView.swift */,
-				26DD1EA42B9EEA5B00B9E26B /* ParentsSheetView.swift */,
-				26AA30C12BB5CC5000351549 /* EmptyMatingView.swift */,
+				26B65F022BC2D81000490DFC /* PalDexViews */,
 				2611EE922BBD8DC4003708D4 /* PalRowView.swift */,
-				2611EE942BBDC22A003708D4 /* ParentRowView.swift */,
+				26B65F012BC2D53500490DFC /* MatingViews */,
+				26438C2C2B6778ED004A08EA /* MapView.swift */,
+				2653B5622B69FF1A00C626A5 /* SettingView.swift */,
+				2675E5D92B88D9A700635C43 /* ChildPickerView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -196,7 +191,6 @@
 				26C1B3972B7F9E1100B4D1BC /* PalViewModel.swift */,
 				2675E5E12B8D07B200635C43 /* SearchFieldViewModel.swift */,
 				262A17DE2B90CDCE00806215 /* searchViewModel.swift */,
-				262A17E02B90CE4400806215 /* BreedingViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -230,6 +224,25 @@
 			children = (
 			);
 			path = Utilities;
+			sourceTree = "<group>";
+		};
+		26B65F012BC2D53500490DFC /* MatingViews */ = {
+			isa = PBXGroup;
+			children = (
+				26DD1EA42B9EEA5B00B9E26B /* ParentsSheetView.swift */,
+				26AA30C12BB5CC5000351549 /* EmptyMatingView.swift */,
+				2653B55E2B69FD8F00C626A5 /* MatingView.swift */,
+			);
+			path = MatingViews;
+			sourceTree = "<group>";
+		};
+		26B65F022BC2D81000490DFC /* PalDexViews */ = {
+			isa = PBXGroup;
+			children = (
+				26C1B3992B7FA04300B4D1BC /* PalDetailView.swift */,
+				26B65F032BC2D83000490DFC /* PalDexListView.swift */,
+			);
+			path = PalDexViews;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -341,10 +354,10 @@
 				26438C2D2B6778ED004A08EA /* MapView.swift in Sources */,
 				26C1B39A2B7FA04300B4D1BC /* PalDetailView.swift in Sources */,
 				2675E5E22B8D07B200635C43 /* SearchFieldViewModel.swift in Sources */,
+				26B65F042BC2D83000490DFC /* PalDexListView.swift in Sources */,
 				2675E5DA2B88D9A700635C43 /* ChildPickerView.swift in Sources */,
 				26438C1D2B674697004A08EA /* PalworldYeonApp.swift in Sources */,
 				2653B55F2B69FD8F00C626A5 /* MatingView.swift in Sources */,
-				2611EE952BBDC22A003708D4 /* ParentRowView.swift in Sources */,
 				26C1B3982B7F9E1200B4D1BC /* PalViewModel.swift in Sources */,
 				26C1B3A62B7FD29300B4D1BC /* Pal.swift in Sources */,
 				26DD1EA52B9EEA5B00B9E26B /* ParentsSheetView.swift in Sources */,
@@ -354,7 +367,6 @@
 				26AA30C02BB5729E00351549 /* PalManager.swift in Sources */,
 				2653B5612B69FDBB00C626A5 /* HomeView.swift in Sources */,
 				26AA30C22BB5CC5000351549 /* EmptyMatingView.swift in Sources */,
-				262A17E12B90CE4400806215 /* BreedingViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

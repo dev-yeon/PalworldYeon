@@ -26,21 +26,33 @@ class PalManager: ObservableObject  {
     var palCache: [String: Pal] = [:]
 
     //MARK: - palData JSON 파일 로드 및 파싱
-
-        func loadPalsData() {
+    func loadPalsData(completion: @escaping () -> Void) {
+        DispatchQueue.global(qos: .userInitiated).async {
             guard let url = Bundle.main.url(forResource: "palData", withExtension: "json") else {
                 print("Failed to locate palData.json in bundle.")
+                DispatchQueue.main.async {
+                    completion()
+                }
                 return
             }
 
             do {
                 let data = try Data(contentsOf: url)
-                self.pals = try JSONDecoder().decode([Pal].self, from: data)
-                print("Loaded \(self.pals.count) data records.")
+                let decodedPalsArray = try JSONDecoder().decode([Pal].self, from: data)
+                DispatchQueue.main.async {
+                    self.pals = decodedPalsArray
+                    print("Loaded \(self.pals.count) data records.")
+                    completion()
+                }
             } catch {
                 print("Failed to load palData.json from bundle: \(error)")
+                DispatchQueue.main.async {
+                    completion()
+                }
             }
         }
+    }
+
     //MARK: - new_palBreedingData JSON 파일 로드 및 파싱
     func loadBreedingData(completion: @escaping () -> Void) {
 
@@ -96,14 +108,13 @@ class PalManager: ObservableObject  {
                     let parentPair = ParentPalPair(mother: motherPal, father: fatherPal)
                     foundPairs.insert(parentPair) // Set에 추가
                     //foundParentPairs.append(contentsOf: [motherPal, fatherPal])
-                    print("\(pair.childName)'s parent pair || mother:  \(motherPal.name), father : \(findFatherNameById(fatherPal.id))")
+
                 }
             }
         }
         DispatchQueue.main.async {
             self.parentPairs = Array(foundPairs) // Convert back to an array if needed
 
-            print("Updated parentPals with \(foundPairs.count) parents.")
         }
     }
     //MARK: -  Pal을 id로 찾아내는 메소드

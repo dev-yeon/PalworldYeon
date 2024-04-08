@@ -5,6 +5,7 @@ struct MatingView: View {
 
     @StateObject private var palManager = PalManager()
     @StateObject private var searchFieldViewModel = SearchFieldViewModel()
+
     @StateObject private var matingViewModel = PalViewModel()
 
     @State private var selectedChildPalId: Int?
@@ -39,6 +40,7 @@ struct MatingView: View {
                     }
                 }
             }
+
             .disabled(selectedChildName == nil)
 
             if filteredPals.isEmpty {
@@ -56,7 +58,7 @@ struct MatingView: View {
                         }
                         // Sheet를 표시하기 위해 showParentSheet를 true로 설정
                                        self.showParentSheet = true
-        
+
                     }) {
                         PalRowView(pal: pal) // PalRowView 사용
                     }
@@ -83,7 +85,7 @@ struct MatingView: View {
                         }
                         .padding(.trailing, 20) // 버튼이 HStack 오른쪽 끝에서 너무 멀지 않도록 조정
                         .padding(.top, 5) // 상단 여백 조정으로 위치 조정
-                    
+
                     }
                     .padding(.trailing)
                     ParentsSheetView(selectedOneChildName: selectedChildName, parents: palManager.parentPals)
@@ -93,12 +95,20 @@ struct MatingView: View {
         }
         .onAppear {
             print("Total Pals on Appear: \(palManager.pals.count)")
-            palManager.loadPalsData()
+            palManager.loadPalsData(){
+                DispatchQueue.main.async {
+                      // Update UI elements or state variables
+                  }
+              }
+
             palManager.loadBreedingData() {
                 // 데이터 로드 후 배열의 상태를 다시 출력하여 확인
                 print("Total Pals after Data Load: \(self.palManager.pals.count)")
             }
         }
+
+
+
 
         // selectedChildPalName 값이 변경될 때마다 부모 쌍을 검색합니다.
         .onChange(of: selectedChildName) { newValue in
@@ -107,11 +117,7 @@ struct MatingView: View {
                 self.showParentSheet = true
             }
         }
-//        .sheet(isPresented: $showParentSheet) {
-//            if let selectedChildName = selectedChildName {
-//                ParentsSheetView(selectedOneChildName: selectedChildName, parents: palManager.parentPals)
-//                    .environmentObject(palManager) // `palManager` 인스턴스를 전달합니다.
-//            }
-//        }
     }
 }
+
+

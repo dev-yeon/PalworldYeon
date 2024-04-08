@@ -9,38 +9,36 @@ import SwiftUI
 
 struct HomeView: View {
     @State private var selectedTab = 0
-    
+
     var body: some View {
         TabView(selection: $selectedTab) {
-           
+
             // Mating Tab
-            
             MatingView()
                 .tabItem {
                     Image(systemName: "heart")
                     Text("Mating")
                 }
                 .tag(0)
-            
+            // Pal Detail Tab
+            PalDexListView()
+                .tabItem {
+                    Image(systemName: "list.bullet.circle")
+                    Text("PalDex")
+                }
+                .tag(1)
             // Map Tab
             MapView()
                 .tabItem {
                     Image(systemName: "map")
                     Text("Map")
                 }
-                .tag(1)
-            
-            // Setting Tab
-            SettingView()
-                .tabItem {
-                    Image(systemName: "gear")
-                    Text("setting")
-                }
                 .tag(2)
+
         }
         .navigationTitle(titleForSelectedTab(selectedTab))
     }
-    
+
 }
 
 private func titleForSelectedTab(_ tab: Int) -> String {
@@ -48,9 +46,9 @@ private func titleForSelectedTab(_ tab: Int) -> String {
     case 0:
         return "Mating"
     case 1:
-        return "Map"
+        return "PalDex"
     case 2:
-        return "Setting"
+        return "Map"
     default:
         return "Home"
     }
@@ -58,6 +56,3 @@ private func titleForSelectedTab(_ tab: Int) -> String {
 
 
 
-#Preview {
-    HomeView()
-}
