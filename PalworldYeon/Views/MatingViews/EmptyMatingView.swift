@@ -11,13 +11,13 @@ struct EmptyMatingView: View {
     var body: some View {
         
         VStack {
-            Image(systemName: "magnifyingglass") // Example icon
+            Image(systemName: "magnifyingglass") 
                 .resizable()
                 .scaledToFit()
                 .frame(width: 50, height: 50)
                 .foregroundColor(.gray)
-            Text("찾고 싶은 자식 펠의 이름 입력 ex)도로롱 '도'")
-                .font(.caption)
+            Text("해당 팰을 찾을 수 없습니다.")
+                .font(.title3)
         }
         .padding()
         .foregroundColor(.secondary)

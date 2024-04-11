@@ -28,7 +28,6 @@ struct PalDexListView: View {
                         .cornerRadius(10)
                         .padding(.horizontal)
                     Button("펠 찾기") {
-                        // searchPalName이 비어있지 않은 경우에만 실행
                         if !searchPalName.isEmpty {
                             palManager.loadBreedingData {
                                 self.palManager.findParentPairs(forChildName: searchPalName)
@@ -38,24 +37,21 @@ struct PalDexListView: View {
                 }
                 .disabled(searchPalName.isEmpty)
 
-                List(filteredPals) { pal in // 수정됨: Binding 대신 직접 배열 사용
-                    NavigationLink(destination: PalDetailView(pal: pal)) { // Button 대신 NavigationLink 사용
-                        PalRowView(pal: pal) // PalRowView 사용
+                List(filteredPals) { pal in
+                    NavigationLink(destination: PalDetailView(pal: pal)) {
+                        PalRowView(pal: pal)
                     }
                 }
             }
             .navigationTitle("펠월드 도감")
-
         }
         .onAppear {
             if palManager.pals.isEmpty {
                 palManager.loadPalsData() {
                     DispatchQueue.main.async {
-
                     }
                 }
             }
-
         }
     }
 }

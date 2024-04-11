@@ -60,7 +60,6 @@ class PalManager: ObservableObject  {
             print("Failed to locate new_palBreedingData.json in bundle.")
             return
         }
-
         DispatchQueue.global(qos: .userInitiated).async {
             do {
                 let data = try Data(contentsOf: url)
@@ -70,8 +69,6 @@ class PalManager: ObservableObject  {
                     self.allBreedingData = decodedBreedingDataArray
                     print("Loaded \(self.allBreedingData.count) breeding data records.")
                     print("Breeding data loaded successfully.")
-
-
                     completion()
                 }
             } catch {
@@ -95,26 +92,20 @@ class PalManager: ObservableObject  {
     }
     //MARK: - Pal의 가능한 교배식을 Pal 자식의 childName으로 찾아내는 함수
     func findParentPairs(forChildName childName: String) {
-
-        var foundPairs = Set<ParentPalPair>() // 중복을 방지하기 위해 Set 사용
+        var foundPairs = Set<ParentPalPair>()
         print("Searching parent pairs for child: \(childName)")
 
         for breedingData in allBreedingData {
-
             for pair in breedingData.breedings where pair.childName.lowercased() == childName.lowercased() {
                 if let motherPal = findPalByName(breedingData.motherName),
                    let fatherPal = findPalById(pair.fatherid) {
-                    // Add to the set, automatically avoiding duplicates
                     let parentPair = ParentPalPair(mother: motherPal, father: fatherPal)
-                    foundPairs.insert(parentPair) // Set에 추가
-                    //foundParentPairs.append(contentsOf: [motherPal, fatherPal])
-
+                    foundPairs.insert(parentPair) 
                 }
             }
         }
         DispatchQueue.main.async {
-            self.parentPairs = Array(foundPairs) // Convert back to an array if needed
-
+            self.parentPairs = Array(foundPairs)
         }
     }
     //MARK: -  Pal을 id로 찾아내는 메소드
@@ -124,7 +115,6 @@ class PalManager: ObservableObject  {
     //MARK: - 선택된 자식 Pal의 이름을 설정하는 메소드
     func setSelectedChildName(_ name: String?) {
         self.selectedChildName = name
-        // 선택된 이름에 기반한 추가 작업이 필요하다면 여기서 수행
     }
 
    func findFatherNameById(_ id: Int) -> String {

@@ -18,7 +18,6 @@
 		2653B5612B69FDBB00C626A5 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2653B5602B69FDBB00C626A5 /* HomeView.swift */; };
 		2653B5632B69FF1A00C626A5 /* SettingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2653B5622B69FF1A00C626A5 /* SettingView.swift */; };
 		266382162B9AE2C600E5DF57 /* new_palBreedingData.json in Resources */ = {isa = PBXBuildFile; fileRef = 266382152B9AE2C600E5DF57 /* new_palBreedingData.json */; };
-		2675E5DA2B88D9A700635C43 /* ChildPickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2675E5D92B88D9A700635C43 /* ChildPickerView.swift */; };
 		2675E5E22B8D07B200635C43 /* SearchFieldViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2675E5E12B8D07B200635C43 /* SearchFieldViewModel.swift */; };
 		26AA30C02BB5729E00351549 /* PalManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26AA30BF2BB5729E00351549 /* PalManager.swift */; };
 		26AA30C22BB5CC5000351549 /* EmptyMatingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26AA30C12BB5CC5000351549 /* EmptyMatingView.swift */; };
@@ -72,7 +71,6 @@
 		2653B5602B69FDBB00C626A5 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		2653B5622B69FF1A00C626A5 /* SettingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingView.swift; sourceTree = "<group>"; };
 		266382152B9AE2C600E5DF57 /* new_palBreedingData.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = new_palBreedingData.json; sourceTree = "<group>"; };
-		2675E5D92B88D9A700635C43 /* ChildPickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChildPickerView.swift; sourceTree = "<group>"; };
 		2675E5E12B8D07B200635C43 /* SearchFieldViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchFieldViewModel.swift; sourceTree = "<group>"; };
 		26AA30BF2BB5729E00351549 /* PalManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PalManager.swift; sourceTree = "<group>"; };
 		26AA30C12BB5CC5000351549 /* EmptyMatingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmptyMatingView.swift; sourceTree = "<group>"; };
@@ -178,7 +176,6 @@
 				26B65F012BC2D53500490DFC /* MatingViews */,
 				26438C2C2B6778ED004A08EA /* MapView.swift */,
 				2653B5622B69FF1A00C626A5 /* SettingView.swift */,
-				2675E5D92B88D9A700635C43 /* ChildPickerView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -355,7 +352,6 @@
 				26C1B39A2B7FA04300B4D1BC /* PalDetailView.swift in Sources */,
 				2675E5E22B8D07B200635C43 /* SearchFieldViewModel.swift in Sources */,
 				26B65F042BC2D83000490DFC /* PalDexListView.swift in Sources */,
-				2675E5DA2B88D9A700635C43 /* ChildPickerView.swift in Sources */,
 				26438C1D2B674697004A08EA /* PalworldYeonApp.swift in Sources */,
 				2653B55F2B69FD8F00C626A5 /* MatingView.swift in Sources */,
 				26C1B3982B7F9E1200B4D1BC /* PalViewModel.swift in Sources */,

@@ -20,13 +20,14 @@ struct BreedingData: Codable, Hashable {
 struct ParentPalPair: Hashable {
     let mother: Pal
     let father: Pal
-    
-    func hash(into hasher: inout Hasher) {
-           hasher.combine(mother)
-           hasher.combine(father)
-       }
 
-       static func ==(lhs: ParentPalPair, rhs: ParentPalPair) -> Bool {
-           return lhs.mother == rhs.mother && lhs.father == rhs.father
-       }
+    func hash(into hasher: inout Hasher) {
+        hasher.combine(min(mother.id, father.id))
+        hasher.combine(max(mother.id, father.id))
+    }
+
+    static func ==(lhs: ParentPalPair, rhs: ParentPalPair) -> Bool {
+        return (lhs.mother.id == rhs.mother.id && lhs.father.id == rhs.father.id) ||
+               (lhs.mother.id == rhs.father.id && lhs.father.id == rhs.mother.id)
+    }
 }

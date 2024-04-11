@@ -14,7 +14,6 @@ struct ParentsSheetView: View {
     var parents: [Pal]
     var searchViewModel = SearchFieldViewModel()
 
-
     private func findParents() {
         palManager.findParentPairs(forChildName: selectedOneChildName)
     }
@@ -22,12 +21,12 @@ struct ParentsSheetView: View {
         NavigationView {
             List {
                 Section(header: Text("\(selectedOneChildName)의 가능한 부모 조합")
-                            .font(.headline) // 섹션 헤더의 폰트 크기 조정
-                            .padding(.vertical, 4) // 섹션 헤더의 상하 패딩 조정
+                            .font(.headline)
+                            .padding(.vertical, 4)
                 ) {
                     ForEach(palManager.parentPairs.indices, id: \.self) { index in
                         let pair = palManager.parentPairs[index]
-                        VStack(alignment: .leading, spacing: 4) { // VStack 내부 간격 조정
+                        VStack(alignment: .leading, spacing: 4) {
                             HStack {
                                 Text("No. \(pair.mother.palDeckNo)")
                                     .padding(3)
@@ -38,8 +37,8 @@ struct ParentsSheetView: View {
                                 Text(pair.mother.name)
                                     .lineSpacing(10.0)
                             }
-                            .font(.subheadline) // 텍스트 폰트 크기 조정
-                            .padding(.vertical, 2) // 텍스트 상하 패딩 조정
+                            .font(.subheadline)
+                            .padding(.vertical, 2)
                             HStack {
                                 Text("No. \(pair.father.palDeckNo)")
                                     .padding(3)
@@ -50,15 +49,15 @@ struct ParentsSheetView: View {
                                 Text(pair.father.name)
                                     .lineSpacing(10.0)
                             }
-                                .font(.subheadline) // 텍스트 폰트 크기 조정
-                                .padding(.vertical, 2) // 텍스트 상하 패딩 조정
+                                .font(.subheadline)
+                                .padding(.vertical, 2)
                         }
-                        .padding(.vertical, 4) // VStack의 상하 패딩 조정
+                        .padding(.vertical, 4)
                     }
                 }
             }
-            .navigationBarTitle("\(selectedOneChildName)의 가능한 부모", displayMode: .inline)
-            
+//            .navigationBarTitle("\(selectedOneChildName)의 가능한 부모", displayMode: .inline)
+//            
             .onAppear {
                 self.palManager.findParentPairs(forChildName: selectedOneChildName)
             }
