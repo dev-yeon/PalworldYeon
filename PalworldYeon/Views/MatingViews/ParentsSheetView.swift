@@ -30,7 +30,7 @@ struct ParentsSheetView: View {
                             HStack {
                                 Text("No. \(pair.mother.palDeckNo)")
                                     .padding(3)
-                                Image("palicon_\(pair.mother.palDeckNo)")
+                                Image("\(pair.mother.palDeckNo)")
                                     .resizable()
                                     .scaledToFit()
                                     .frame(width: 25, height: 25)

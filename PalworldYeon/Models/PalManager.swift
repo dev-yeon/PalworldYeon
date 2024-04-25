@@ -12,8 +12,8 @@ import Foundation
 class PalManager: ObservableObject  {
     //MARK: - Pal 객체들의 데이터를 이름을 키로 하여 저장하는 딕셔너리
 
-    @Published var palDataDictionary: [String: Pal] = [:]
-    @Published var pals: [Pal] = []
+    @Published var palDataDictionary: [String: koPal] = [:]
+    @Published var koPals: [koPal] = []
     @Published var allBreedingData: [BreedingData] = []
 
     @Published var parentPals: [Pal] = [] // 부모 Pal 객체의 배열
@@ -23,7 +23,7 @@ class PalManager: ObservableObject  {
 
 //    @Published var allAvailablePals: [Pal] = []
     // 이미 생성된 Pal 객체를 관리하는 캐시
-    var palCache: [String: Pal] = [:]
+    var palCache: [String : Pal] = [:]
 
     //MARK: - palData JSON 파일 로드 및 파싱
     func loadPalsData(completion: @escaping () -> Void) {

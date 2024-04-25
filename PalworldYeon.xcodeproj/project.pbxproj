@@ -17,6 +17,22 @@
 		2653B55F2B69FD8F00C626A5 /* MatingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2653B55E2B69FD8F00C626A5 /* MatingView.swift */; };
 		2653B5612B69FDBB00C626A5 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2653B5602B69FDBB00C626A5 /* HomeView.swift */; };
 		2653B5632B69FF1A00C626A5 /* SettingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2653B5622B69FF1A00C626A5 /* SettingView.swift */; };
+		2659604E2BC7D06A00F5ECE4 /* breeding.json in Resources */ = {isa = PBXBuildFile; fileRef = 2659604D2BC7D06A00F5ECE4 /* breeding.json */; };
+		265960552BC7D07600F5ECE4 /* EnPals.json in Resources */ = {isa = PBXBuildFile; fileRef = 2659604F2BC7D07500F5ECE4 /* EnPals.json */; };
+		265960562BC7D07600F5ECE4 /* passive_skills.json in Resources */ = {isa = PBXBuildFile; fileRef = 265960502BC7D07500F5ECE4 /* passive_skills.json */; };
+		265960572BC7D07600F5ECE4 /* item.json in Resources */ = {isa = PBXBuildFile; fileRef = 265960512BC7D07600F5ECE4 /* item.json */; };
+		265960582BC7D07600F5ECE4 /* gear.json in Resources */ = {isa = PBXBuildFile; fileRef = 265960522BC7D07600F5ECE4 /* gear.json */; };
+		265960592BC7D07600F5ECE4 /* PaldexDistributionData.json in Resources */ = {isa = PBXBuildFile; fileRef = 265960542BC7D07600F5ECE4 /* PaldexDistributionData.json */; };
+		2659605B2BC90E6A00F5ECE4 /* items_details.json in Resources */ = {isa = PBXBuildFile; fileRef = 2659605A2BC90E6A00F5ECE4 /* items_details.json */; };
+		2659605D2BC9104600F5ECE4 /* EnPal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2659605C2BC9104600F5ECE4 /* EnPal.swift */; };
+		2659605F2BC912B100F5ECE4 /* EnPalBreeding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2659605E2BC912B100F5ECE4 /* EnPalBreeding.swift */; };
+		265960612BC912C700F5ECE4 /* EnItems.swift in Sources */ = {isa = PBXBuildFile; fileRef = 265960602BC912C700F5ECE4 /* EnItems.swift */; };
+		265960632BC914A700F5ECE4 /* EnItemDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 265960622BC914A700F5ECE4 /* EnItemDetail.swift */; };
+		265960682BCD074700F5ECE4 /* EnPalManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 265960672BCD074700F5ECE4 /* EnPalManager.swift */; };
+		2659606A2BCD07F400F5ECE4 /* EnPal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 265960692BCD07F400F5ECE4 /* EnPal.swift */; };
+		2659606D2BCD1D1800F5ECE4 /* NewBreeding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2659606C2BCD1D1800F5ECE4 /* NewBreeding.swift */; };
+		265960752BCD2A7800F5ECE4 /* MatingView_2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 265960742BCD2A7800F5ECE4 /* MatingView_2.swift */; };
+		2659607A2BCD2C3100F5ECE4 /* SearchFieldViewModel_2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 265960792BCD2C3100F5ECE4 /* SearchFieldViewModel_2.swift */; };
 		266382162B9AE2C600E5DF57 /* new_palBreedingData.json in Resources */ = {isa = PBXBuildFile; fileRef = 266382152B9AE2C600E5DF57 /* new_palBreedingData.json */; };
 		2675E5E22B8D07B200635C43 /* SearchFieldViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2675E5E12B8D07B200635C43 /* SearchFieldViewModel.swift */; };
 		26AA30C02BB5729E00351549 /* PalManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26AA30BF2BB5729E00351549 /* PalManager.swift */; };
@@ -70,6 +86,22 @@
 		2653B55E2B69FD8F00C626A5 /* MatingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatingView.swift; sourceTree = "<group>"; };
 		2653B5602B69FDBB00C626A5 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		2653B5622B69FF1A00C626A5 /* SettingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingView.swift; sourceTree = "<group>"; };
+		2659604D2BC7D06A00F5ECE4 /* breeding.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = breeding.json; sourceTree = "<group>"; };
+		2659604F2BC7D07500F5ECE4 /* EnPals.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = EnPals.json; sourceTree = "<group>"; };
+		265960502BC7D07500F5ECE4 /* passive_skills.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = passive_skills.json; sourceTree = "<group>"; };
+		265960512BC7D07600F5ECE4 /* item.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = item.json; sourceTree = "<group>"; };
+		265960522BC7D07600F5ECE4 /* gear.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = gear.json; sourceTree = "<group>"; };
+		265960542BC7D07600F5ECE4 /* PaldexDistributionData.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = PaldexDistributionData.json; sourceTree = "<group>"; };
+		2659605A2BC90E6A00F5ECE4 /* items_details.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = items_details.json; sourceTree = "<group>"; };
+		2659605C2BC9104600F5ECE4 /* EnPal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnPal.swift; sourceTree = "<group>"; };
+		2659605E2BC912B100F5ECE4 /* EnPalBreeding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnPalBreeding.swift; sourceTree = "<group>"; };
+		265960602BC912C700F5ECE4 /* EnItems.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnItems.swift; sourceTree = "<group>"; };
+		265960622BC914A700F5ECE4 /* EnItemDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnItemDetail.swift; sourceTree = "<group>"; };
+		265960672BCD074700F5ECE4 /* EnPalManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnPalManager.swift; sourceTree = "<group>"; };
+		265960692BCD07F400F5ECE4 /* EnPal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnPal.swift; sourceTree = "<group>"; };
+		2659606C2BCD1D1800F5ECE4 /* NewBreeding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewBreeding.swift; sourceTree = "<group>"; };
+		265960742BCD2A7800F5ECE4 /* MatingView_2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatingView_2.swift; sourceTree = "<group>"; };
+		265960792BCD2C3100F5ECE4 /* SearchFieldViewModel_2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchFieldViewModel_2.swift; sourceTree = "<group>"; };
 		266382152B9AE2C600E5DF57 /* new_palBreedingData.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = new_palBreedingData.json; sourceTree = "<group>"; };
 		2675E5E12B8D07B200635C43 /* SearchFieldViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchFieldViewModel.swift; sourceTree = "<group>"; };
 		26AA30BF2BB5729E00351549 /* PalManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PalManager.swift; sourceTree = "<group>"; };
@@ -145,6 +177,7 @@
 		26438C1B2B674697004A08EA /* PalworldYeon */ = {
 			isa = PBXGroup;
 			children = (
+				2659604A2BC7D01700F5ECE4 /* Resources */,
 				2653B55A2B69F9DF00C626A5 /* Utilities */,
 				2653B5592B69F9D800C626A5 /* Extensions */,
 				2653B5582B69F9CC00C626A5 /* Services */,
@@ -183,8 +216,6 @@
 		2653B5562B69F9AA00C626A5 /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
-				26D998C32B86397D000FEAA1 /* palData.json */,
-				266382152B9AE2C600E5DF57 /* new_palBreedingData.json */,
 				26C1B3972B7F9E1100B4D1BC /* PalViewModel.swift */,
 				2675E5E12B8D07B200635C43 /* SearchFieldViewModel.swift */,
 				262A17DE2B90CDCE00806215 /* searchViewModel.swift */,
@@ -195,6 +226,7 @@
 		2653B5572B69F9C000C626A5 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				265960642BC91D6100F5ECE4 /* EnModels */,
 				26C1B3A52B7FD29300B4D1BC /* Pal.swift */,
 				262A17E62B90D91900806215 /* BreedingData.swift */,
 				26AA30BF2BB5729E00351549 /* PalManager.swift */,
@@ -221,6 +253,111 @@
 			children = (
 			);
 			path = Utilities;
+			sourceTree = "<group>";
+		};
+		2659604A2BC7D01700F5ECE4 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				2659606E2BCD261F00F5ECE4 /* Json */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		2659604B2BC7D03C00F5ECE4 /* EN */ = {
+			isa = PBXGroup;
+			children = (
+				265960662BCD06F700F5ECE4 /* Views */,
+				265960652BCD06CF00F5ECE4 /* Models */,
+			);
+			path = EN;
+			sourceTree = "<group>";
+		};
+		2659604C2BC7D04600F5ECE4 /* KO */ = {
+			isa = PBXGroup;
+			children = (
+				26D998C32B86397D000FEAA1 /* palData.json */,
+				266382152B9AE2C600E5DF57 /* new_palBreedingData.json */,
+			);
+			path = KO;
+			sourceTree = "<group>";
+		};
+		265960642BC91D6100F5ECE4 /* EnModels */ = {
+			isa = PBXGroup;
+			children = (
+				265960622BC914A700F5ECE4 /* EnItemDetail.swift */,
+				2659605E2BC912B100F5ECE4 /* EnPalBreeding.swift */,
+				265960602BC912C700F5ECE4 /* EnItems.swift */,
+				2659605C2BC9104600F5ECE4 /* EnPal.swift */,
+			);
+			path = EnModels;
+			sourceTree = "<group>";
+		};
+		265960652BCD06CF00F5ECE4 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				2659606C2BCD1D1800F5ECE4 /* NewBreeding.swift */,
+				265960672BCD074700F5ECE4 /* EnPalManager.swift */,
+				265960692BCD07F400F5ECE4 /* EnPal.swift */,
+				2659605A2BC90E6A00F5ECE4 /* items_details.json */,
+				265960522BC7D07600F5ECE4 /* gear.json */,
+				265960512BC7D07600F5ECE4 /* item.json */,
+				265960542BC7D07600F5ECE4 /* PaldexDistributionData.json */,
+				2659604F2BC7D07500F5ECE4 /* EnPals.json */,
+				265960502BC7D07500F5ECE4 /* passive_skills.json */,
+				2659604D2BC7D06A00F5ECE4 /* breeding.json */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		265960662BCD06F700F5ECE4 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				265960762BCD2AA000F5ECE4 /* SearchFieldView */,
+				265960712BCD2A1000F5ECE4 /* PalDexViews */,
+				265960702BCD29FF00F5ECE4 /* MatingViews */,
+				2659606F2BCD29D600F5ECE4 /* PaldexViews */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		2659606E2BCD261F00F5ECE4 /* Json */ = {
+			isa = PBXGroup;
+			children = (
+				2659604B2BC7D03C00F5ECE4 /* EN */,
+				2659604C2BC7D04600F5ECE4 /* KO */,
+			);
+			path = Json;
+			sourceTree = "<group>";
+		};
+		2659606F2BCD29D600F5ECE4 /* PaldexViews */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = PaldexViews;
+			sourceTree = "<group>";
+		};
+		265960702BCD29FF00F5ECE4 /* MatingViews */ = {
+			isa = PBXGroup;
+			children = (
+				265960742BCD2A7800F5ECE4 /* MatingView_2.swift */,
+			);
+			path = MatingViews;
+			sourceTree = "<group>";
+		};
+		265960712BCD2A1000F5ECE4 /* PalDexViews */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = PalDexViews;
+			path = MatingViews/PalDexViews;
+			sourceTree = "<group>";
+		};
+		265960762BCD2AA000F5ECE4 /* SearchFieldView */ = {
+			isa = PBXGroup;
+			children = (
+				265960792BCD2C3100F5ECE4 /* SearchFieldViewModel_2.swift */,
+			);
+			path = SearchFieldView;
 			sourceTree = "<group>";
 		};
 		26B65F012BC2D53500490DFC /* MatingViews */ = {
@@ -334,9 +471,16 @@
 			files = (
 				26438C242B674698004A08EA /* Preview Assets.xcassets in Resources */,
 				26438C212B674698004A08EA /* Assets.xcassets in Resources */,
+				265960552BC7D07600F5ECE4 /* EnPals.json in Resources */,
 				266382162B9AE2C600E5DF57 /* new_palBreedingData.json in Resources */,
+				265960592BC7D07600F5ECE4 /* PaldexDistributionData.json in Resources */,
+				2659605B2BC90E6A00F5ECE4 /* items_details.json in Resources */,
+				265960582BC7D07600F5ECE4 /* gear.json in Resources */,
 				26C16A9F2B6D1B3E00597B8F /* GoogleService-Info.plist in Resources */,
 				26C1B39E2B7FBED300B4D1BC /* palData.json in Resources */,
+				2659604E2BC7D06A00F5ECE4 /* breeding.json in Resources */,
+				265960562BC7D07600F5ECE4 /* passive_skills.json in Resources */,
+				265960572BC7D07600F5ECE4 /* item.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -348,6 +492,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				262A17E72B90D91900806215 /* BreedingData.swift in Sources */,
+				265960752BCD2A7800F5ECE4 /* MatingView_2.swift in Sources */,
 				26438C2D2B6778ED004A08EA /* MapView.swift in Sources */,
 				26C1B39A2B7FA04300B4D1BC /* PalDetailView.swift in Sources */,
 				2675E5E22B8D07B200635C43 /* SearchFieldViewModel.swift in Sources */,
@@ -355,13 +500,21 @@
 				26438C1D2B674697004A08EA /* PalworldYeonApp.swift in Sources */,
 				2653B55F2B69FD8F00C626A5 /* MatingView.swift in Sources */,
 				26C1B3982B7F9E1200B4D1BC /* PalViewModel.swift in Sources */,
+				2659605F2BC912B100F5ECE4 /* EnPalBreeding.swift in Sources */,
 				26C1B3A62B7FD29300B4D1BC /* Pal.swift in Sources */,
+				2659606A2BCD07F400F5ECE4 /* EnPal.swift in Sources */,
 				26DD1EA52B9EEA5B00B9E26B /* ParentsSheetView.swift in Sources */,
+				265960612BC912C700F5ECE4 /* EnItems.swift in Sources */,
 				2611EE932BBD8DC4003708D4 /* PalRowView.swift in Sources */,
+				2659606D2BCD1D1800F5ECE4 /* NewBreeding.swift in Sources */,
 				262A17DF2B90CDCE00806215 /* searchViewModel.swift in Sources */,
+				2659607A2BCD2C3100F5ECE4 /* SearchFieldViewModel_2.swift in Sources */,
+				265960682BCD074700F5ECE4 /* EnPalManager.swift in Sources */,
+				265960632BC914A700F5ECE4 /* EnItemDetail.swift in Sources */,
 				2653B5632B69FF1A00C626A5 /* SettingView.swift in Sources */,
 				26AA30C02BB5729E00351549 /* PalManager.swift in Sources */,
 				2653B5612B69FDBB00C626A5 /* HomeView.swift in Sources */,
+				2659605D2BC9104600F5ECE4 /* EnPal.swift in Sources */,
 				26AA30C22BB5CC5000351549 /* EmptyMatingView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
